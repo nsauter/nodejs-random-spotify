@@ -6,14 +6,16 @@ This app connects to the spotify api and has 3 endpoints /generaterandomsong whi
 
 This was my first nodejs project and i finished it on the weekend to gift it to my crush since we are talking a lot about music. Feel free to pull and try it out. Its far from perfect but it works :) 
 
+Ah, i forgot the best 'feature' -> If there is an error the api just responds and rickrolles you.
+
 ## Possible .env values
 
-DATA_FIle - holds a value like /var/tmp/tokenfile
-APIPASS - holds the API Password which is allowed to generate the playlist token
-SPOTIFY_ID - holds the Spotify api ID
-SPOTIFY_SECRET - holds the Spotify api secret
-ADDRESS - is the bind address for node
-PORT - is the bind port for node
-SPOTIFY_PLAYLIST_ID - holds the id of the spotify playlist 
+* `DATA_FILE` - holds a value like /var/tmp/tokenfile
+* `APIPASS` - holds the API Password which is allowed to generate the playlist token
+* `SPOTIFY_ID` - holds the Spotify api ID
+* `SPOTIFY_SECRET` - holds the Spotify api secret
+* `ADDRESS` - is the bind address for node
+* `PORT` - is the bind port for node
+* `SPOTIFY_PLAYLIST_ID` - holds the id of the spotify playlist 
 
 
