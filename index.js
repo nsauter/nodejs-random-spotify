@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const Spotify = require('node-spotify-api');
 const fs = require('fs');
 const jfile = require('jfile');
+const https = require('https');
 
 require('dotenv').config();
 
@@ -201,6 +202,15 @@ app.get('/getrandomsong', async (req, res) => {
 
 const address = process.env.ADDRESS || '0.0.0.0';
 const port = process.env.PORT || 1337;
-app.listen(port, address, () => {
+
+https.createServer({
+    key: fs.readFileSync(`${process.env.SSL_KEY}`),
+    cert: fs.readFileSync(`${process.env.SSL_CERT}`)
+}, app)
+.listen(port, address, () => {
     console.log(`Listening at http://${address}:${port}`);
 });
+
+/*app.listen(port, address, () => {
+    console.log(`Listening at http://${address}:${port}`);
+});*/
