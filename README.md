@@ -19,6 +19,6 @@ Ah, i forgot the best 'feature' -> If there is an error the api just responds an
 * `SSL_KEY` - path to the ssl key file 
 * `SSL_CERT` - path to ssl certificate file (pem) 
 
-Make sure to set the right Spotify Playlist URL on Line 99. (GET playlist not tracks).
+Make sure to set the right Spotify Playlist ID on Line 99.
 
 

@@ -96,15 +96,16 @@ app.post('/getplaylistsong', async (req, res) => {
 
                 // Make the actual request
                 spotify
-                    .request("")
+                    .request("https://api.spotify.com/v1/playlists/YOURPLAYLISTID")
                     .then(function(data) {
                         const playlist_size = (data['tracks']['total']);
                         data = (data['tracks']['items'][between(0, playlist_size)]);
+                        console.log(data);
                                                 
                         // Get the Artists
                         const artist = (data['track']['album']['artists'][0]['name']);
                         // Get Song Name
-                        const song = (data['track']['album']['name']);
+                        const song = (data['track']['name']);
                         // Get Cover
                         const cover = (data['track']['album']['images'][0]['url']);
                         //Get Spotify Link to Song
