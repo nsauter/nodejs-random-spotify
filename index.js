@@ -96,7 +96,7 @@ app.post('/getplaylistsong', async (req, res) => {
 
                 // Make the actual request
                 spotify
-                    .request(`https://api.spotify.com/v1/playlists/${process.env.SPOFIFY_PLAYLIST_ID}/tracks`)
+                    .request("")
                     .then(function(data) {
                         const playlist_size = (data['tracks']['total']);
                         data = (data['tracks']['items'][between(0, playlist_size)]);

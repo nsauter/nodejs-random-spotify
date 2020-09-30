@@ -16,8 +16,9 @@ Ah, i forgot the best 'feature' -> If there is an error the api just responds an
 * `SPOTIFY_SECRET` - holds the Spotify api secret
 * `ADDRESS` - is the bind address for node
 * `PORT` - is the bind port for node
-* `SPOTIFY_PLAYLIST_ID` - holds the id of the spotify playlist 
 * `SSL_KEY` - path to the ssl key file 
 * `SSL_CERT` - path to ssl certificate file (pem) 
+
+Make sure to set the right Spotify Playlist URL on Line 99. (GET playlist not tracks).
 
 
