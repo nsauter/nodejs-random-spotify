@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <title>Spotify Music Madness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center><h1 class="title">Spotify Music Madness</h1></center>
+    <br>
+    <div class="wrapper" id="app">
+        <div class="cover">
+            <br>
+	    <img style="box-shadow: -12px 13px 0px 0px rgba(255,255,255,1);" alt="Cover Image" src="<%=cover%>">
+            <br><br>
+            <div class="infos">
+		    <%=name%> - <%=artist%>
+            </div>
+            <br><br>
+	    <form action="<%=link%>">
+		    <button class="gmas" type="submit">Listen on Spotify 🚀</button>
+            </form>
+            <br>
+            <div>
+		<button class="gmas" onclick="(function() { location.reload(); })()">
+                    Get me a new Song! 🎁
+		</button>
+            </div>
+        </div>
+    </div>
+    <footer class="foo">
+        <center>
+        <a href="/legal">Legal Notice (Imprint) & Data Protection Policy</a>
+        </center>
+    </footer>
+</body>
+</html>

@@ -14,13 +14,15 @@
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.8",
     "express": "^4.17.1",
     "helmet": "^4.1.1",
     "jfile": "^1.1.12",
     "morgan": "^1.10.0",
     "nanoid": "^3.1.12",
     "node-spotify-api": "^1.1.1",
-    "dotenv": "^8.2.0",
+    "pug": "^3.0.2",
     "yup": "^0.29.3"
   },
   "devDependencies": {
